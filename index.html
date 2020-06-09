@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Velha</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</head>
+<body>
+  <h1>Jogo da Velha ! ! !</h1>
+  <table class="center">
+    <tr>
+      <td></td>
+      <td class="borderLeftBorderRight"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="borderTopBorderBotton"></td>
+      <td class="borderTopBorderBotton borderLeftBorderRight"></td>
+      <td class="borderTopBorderBotton"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td class="borderLeftBorderRight"></td>
+      <td></td>
+    </tr>
+  </table>
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+    Launch static backdrop modal
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Jogo da velha!</h5>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label>Player 1</label>
+              <input type="text" class="form-control" name="input_player_one" placeholder="Encreva seu nome aqui!">
+            </div>
+            <div class="form-group">
+              <label>Player 2</label>
+              <input type="text" class="form-control" name="input_player_two" placeholder="Encreva seu nome aqui!">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Começar o jogo!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+  
