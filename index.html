@@ -9,30 +9,38 @@
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
 </head>
 <body>
-  <h1>Jogo da Velha ! ! !</h1>
-  <table class="center">
-    <tr>
-      <td></td>
-      <td class="borderLeftBorderRight"></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td class="borderTopBorderBotton"></td>
-      <td class="borderTopBorderBotton borderLeftBorderRight"></td>
-      <td class="borderTopBorderBotton"></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td class="borderLeftBorderRight"></td>
-      <td></td>
-    </tr>
-  </table>
-  <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
-    Launch static backdrop modal
-  </button>
+  <div id="jogo" class="container-fluid">
+    <div class="row placar">
+      <div class="col-sm">
+        <h1><span id="span_player_one"> </span><span class="badge badge-secondary">0</span></h1>
+      </div>
+      <div class="col-sm text-right">
+        <h1><span id="span_player_two"></span><span class="badge badge-secondary">0</span></h1>
+      </div>
+    </div>
+    <div class="row">
+      <table class="center">
+        <tr>
+          <td></td>
+          <td class="borderLeftBorderRight"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="borderTopBorderBotton"></td>
+          <td class="borderTopBorderBotton borderLeftBorderRight"></td>
+          <td class="borderTopBorderBotton"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="borderLeftBorderRight"></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+  </div>
 
   <!-- Modal -->
   <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -54,7 +62,7 @@
           </form>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Começar o jogo!</button>
+          <button id="botao_start" type="button" class="btn btn-primary">Começar o jogo!</button>
         </div>
       </div>
     </div>
