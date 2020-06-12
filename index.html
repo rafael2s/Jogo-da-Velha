@@ -15,14 +15,19 @@
   <div id="jogo" class="container-fluid">
     <div class="row placar">
       <div class="col-sm">
-        <h1><span id="span_player_one"> </span><span class="badge badge-secondary">0</span></h1>
+        <h1><span id="span_player_one"></span><span id="span_player_one_score" class="badge badge-dark">0</span></h1>
+      </div>
+      <div class="col-sm text-center">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#resultadoJogo">
+          Informar vencedor!!!
+        </button>
       </div>
       <div class="col-sm text-right">
-        <h1><span id="span_player_two"></span><span class="badge badge-secondary">0</span></h1>
+        <h1><span id="span_player_two"></span><span id="span_player_two_score" class="badge badge-dark">0</span></h1>
       </div>
     </div>
     <div class="row">
-      <table class="center">
+      <table class="center display-1 table-dark">
         <tr>
           <td></td>
           <td class="borderLeftBorderRight"></td>
@@ -42,7 +47,7 @@
     </div>
   </div>
 
-  <!-- Modal -->
+  <!-- Modal Nomes Players-->
   <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -63,6 +68,27 @@
         </div>
         <div class="modal-footer">
           <button id="botao_start" type="button" class="btn btn-primary">Começar o jogo!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Resulta final-->
+  <div class="modal fade" id="resultadoJogo" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="resultadoJogoLabel">Resultado do Jogo</h5>
+        </div>
+        <div class="modal-footer">
+          <div class="col-sm">
+            <button id="botao_player_one_win" type="button" class="btn btn-success btn-lg btn-block">Player 1</button>
+          </div>
+          <div class="col-sm">
+            <button id="botao_player_draw" type="button" class="btn btn-danger btn-lg btn-block">Draw</button>
+          </div>
+          <div class="col-sm">
+            <button id="botao_player_two_win" type="button" class="btn btn-success btn-lg btn-block">Player 2</button>
+          </div>
         </div>
       </div>
     </div>
